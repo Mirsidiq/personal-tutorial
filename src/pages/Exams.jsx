@@ -17,33 +17,20 @@ export default function Exams() {
           <Table bordered hover responsive className="mt-2">
             <thead>
               <tr>
-                <th>Xato ishlangan misollar</th>
-                <th>Bajarilmagan misollar</th>
+                <th>Jami</th>
+                <th>Xato javoblar</th>
+                <th>To'g'ri javoblar</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>5</td>
-                <td>7</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>6</td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>13</td>
-              </tr>
-              <tr>
-                <td>12</td>
-                <td>9</td>
+                <td className='bg-primary'>30</td>
+                <td className='bg-danger'>15</td>
+                <td className='bg-success'>15</td>
               </tr>
             </tbody>
           </Table>
         </div>
-        <p className="exam__result bg-primary text-white p-2">Jami : <span className="exam__result__number">30</span></p>
-        <p className="exam__result bg-success text-white p-2">To'g'ri javoblar : <span className="exam__result__number">30</span></p>
-        <p className="exam__result bg-danger text-white p-2">Xato javoblar : <span className="exam__result__number">30</span></p>
         <Button className="go__home__btn w-100" onClick={()=>navigate(-1)}>Ortga</Button>
         </Container>
     </div>

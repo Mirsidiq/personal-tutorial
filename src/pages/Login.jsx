@@ -9,7 +9,10 @@ export default function Login({setAccess}) {
             setAccess(true)
         }
         else{
+            const errorMessage=document.querySelector(".login__wrong")
             setAccess(false)
+            errorMessage.classList.add("login__wrong-active")
+            setTimeout(()=>{errorMessage.classList.remove("login__wrong-active")},3000)
         }
       }
   return (
